@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>API reference</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <style>
+            table {margin: 0 auto; width: 1000px;}
+            td,th {border-collapse: collapse; border: 1px solid black;}
+        </style>
+    </head>
+    <body>
+        <div>
+            <table>
+                <thead>
+                <th>Method</th>
+                <th>URL</th>
+                <th>Example parameters</th>
+                <th>Action</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>POST</td>
+                        <td>/getUser</td>
+                        <td>UserId: 1</td>
+                        <td>Retrieves user based on primary key UserId</td>
+                    </tr>
+                    <tr>
+                        <td>POST</td>
+                        <td>/getFriends</td>
+                        <td>UserId: 1</td>
+                        <td>Retrieves user's friends on primary key UserId</td>
+                    </tr>
+                    <tr>
+                        <td>POST</td>
+                        <td>/getFriendsOfFriend</td>
+                        <td>UserId: 1</td>
+                        <td>Retrieves all friends of user's friend on primary key UserId</td>
+                    </tr>
+                    <tr>
+                        <td>POST</td>
+                        <td>/getSuggested</td>
+                        <td>UserId: 21</td>
+                        <td>Retrieves friends of user's friend when user and his friend have two or more the same friends on primary key UserId</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>           
+    </body>
+    
+</html>
